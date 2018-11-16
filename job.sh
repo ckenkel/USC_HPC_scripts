@@ -1,6 +1,8 @@
 #!/bin/bash
 #SBATCH --ntasks=1
 #SBATCH --time=00:45:00
+#SBATCH --error=%x_%j.err
+#SBATCH --output=%x_%j.out
 #SBATCH --mail-type=END
 #SBATCH --mail-user=<yourname>@usc.edu
 
